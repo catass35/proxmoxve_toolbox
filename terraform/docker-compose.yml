@@ -1,0 +1,9 @@
+version: '0.1'
+
+services:
+  terraform:
+    image: hashicorp/terraform:latest
+    volumes:
+      - .:/terraform
+    working_dir: /terraform
+    entrypoint: ["/bin/terraform"]

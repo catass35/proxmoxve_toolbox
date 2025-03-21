@@ -6,4 +6,6 @@ services:
     volumes:
       - .:/terraform
     working_dir: /terraform
+    environment:
+      - TF_VAR_api_token=$(shell cat .mdp)
     entrypoint: ["/bin/terraform"]

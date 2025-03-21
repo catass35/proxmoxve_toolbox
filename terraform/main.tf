@@ -7,8 +7,8 @@ terraform {
   }
 }
 
-locals {
-  token = var.TF_VAR_api_token
+variable "api_token" {
+   type=string
 }
 
 provider "proxmox" {

@@ -21,6 +21,6 @@ provider "proxmox" {
   }
 }
 
-data "proxmox_virtual_environment_user" "operations_user" {
-  user_id = "terraform-prov@pve"
-}
+#data "proxmox_virtual_environment_user" "operations_user" {
+#  user_id = "terraform-prov@pve"
+#}
